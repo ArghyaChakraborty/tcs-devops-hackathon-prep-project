@@ -1,7 +1,6 @@
 <h4>Following steps describe the end-to-end process for completing TCS DevOps Golden Bridge Hackathon (2019) challenge</h4>
 <h6>Note : For simplicity we used only three GCP VM instances</h6>
 
-
 <h4>Index</h4>
 - <a href="#software-provisioning-stage">1) Software Provisioning Stage</a><br/>
 - <a href="#jenkins-pipeline">2) Jenkins Pipeline</a><br/>
@@ -17,9 +16,9 @@ VM instance creation
 Kubernetes cluster creation 
 	- Created a kubernetes cluster with 3 nodes
 
-
 Creation of ssh keys in <ANSIBLE> instance 
 	- Once <ANSIBLE> instance is created, clicked on Connect --> view gcloud command --> Copy the gcloud command --> RUN IN CLOUD SHELL --> Paste the copied gcloud command --> Hit enter 
+		- If facing issue due to network, check the proxy setting in IE. Try to disable and then tes.
 	- sudo passwd root (change root password to "root")
 	- su - root
 	- ssh-keygen (hit enter when prompted)
